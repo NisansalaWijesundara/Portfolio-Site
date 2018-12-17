@@ -1,0 +1,119 @@
+/*body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+body {
+  font-family: serif;
+  font-size: 12px;
+  color: #424242;
+}
+
+ul{
+  padding: 0;
+  width: 100%;
+  list-style: none;
+}
+
+@media screen and (max-width: 320px) {
+  .header,.header_title,.header_job,.img_working,.game,.arcade,.review{
+      width: 320px;
+  }
+body{
+  width: 320px;
+}
+}
+@media screen and (max-width: 640px) {
+  .header{
+    position: relative;
+    transform: translate(0, 0);
+    width: 100%;
+  }
+  body{
+    display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  }
+.header_title{
+    width: 100%;
+}
+.header_job{
+  width: 100%;
+}
+  .img_working{
+    width: 100%;
+  }
+.game{
+    width: 100%;
+}
+.arcade{
+    width: 100%;
+}
+.review{
+  width: 100%;
+}
+
+}
+
+
+h1, h3 {
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  font-weight:normal;
+  text-transform: uppercase;
+  }
+
+ div, section {
+  box-sizing: border-box;
+}
+li{
+  display: inline-block;
+  padding: 5px;
+
+}
+.header{
+  box-sizing: border-box;
+  display: flex;
+}
+.header_inner {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header_logo {
+  height:100px;
+  margin-right: 2em;
+  vertical-align: top;
+  margin-top: 12px;
+  margin-left: 10px;
+  display: inline-block;
+
+}
+
+.header_title {
+font-size: 3em;
+display: inline-block;
+padding-top: 5px;
+
+}
+
+.header_job {
+font-size: 1em;
+display: inline-block;
+vertical-align: bottom;
+}
+
+.img_working{
+  width: 100%;
+}
+.game,.arcade,.review{
+  width: 200px;
+  height: 200px;
+}
