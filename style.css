@@ -1,119 +1,174 @@
-/*body, html {
+body {
+  font: 20px/1.5 sans-sarif;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+.header-item {
+ width: 100%;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+.header-content {
+ margin-top: 10px;
+}
+.header-logo {
+  width: 100px;
+  height: 100px;
+}
+ h1,
+ h4 {
+  text-transform: uppercase;
+}
+h1 {
+  display: flex;
+  font-weight: lighter;
+  font: 60px 'open sans';
+  margin: -5px 0 -5px 0;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+h4 {
+  margin-top: -30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+hr {
+  border-bottom: #7d97ad 3px solid;
+  width: 80%
+}
+.img-working {
+  width: 100%;
+  height: inherit;
+  margin-top: 30px;
+}
+h3 {
+  font-weight: normal;
+  font-size: 25px;
+  color: #7d97ad;
+}
+.project-list {
+  display: flex;
+  flex-direction: row;
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-}
-
-body {
-  font-family: serif;
-  font-size: 12px;
-  color: #424242;
-}
-
-ul{
-  padding: 0;
-  width: 100%;
-  list-style: none;
-}
-
-@media screen and (max-width: 320px) {
-  .header,.header_title,.header_job,.img_working,.game,.arcade,.review{
-      width: 320px;
-  }
-body{
-  width: 320px;
-}
-}
-@media screen and (max-width: 640px) {
-  .header{
-    position: relative;
-    transform: translate(0, 0);
-    width: 100%;
-  }
-  body{
-    display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  }
-.header_title{
-    width: 100%;
+  list-style-type: none;
+  justify-content: space-between;
 }
-.header_job{
-  width: 100%;
+.game, .arcade, .review {
+  width: 336px;
+  height: 250px;
 }
-  .img_working{
-    width: 100%;
-  }
-.game{
-    width: 100%;
-}
-.arcade{
-    width: 100%;
-}
-.review{
-  width: 100%;
-}
-
-}
-
-
-h1, h3 {
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  font-weight:normal;
+p {
   text-transform: uppercase;
-  }
-
- div, section {
-  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 5px;
 }
-li{
-  display: inline-block;
-  padding: 5px;
-
+a {
+  text-decoration: none;
+  color: #2d3c49;
 }
-.header{
-  box-sizing: border-box;
+.visit {
+  text-align: center;
+}
+.bottom {
+  text-transform: none;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-.header_inner {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+@media screen and (max-width: 320px) {
+  .container {
+    width: 100%;
+  }
+  .header-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    width: 320px;
+  }
+  .header-logo {
+    width: 50px;
+    height: 50px;
+  }
+  .header-content {
+    justify-content: center;
+  }
+  h1 {
+    font-size: 25px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  h4 {
+    font-size: 10px;
+    flex-direction: row;
+    justify-content: center;
+  }
+    hr{
+    width: 100%;
+  }
+  .img-working {
+    height: 50%;
+    width: 320px;
+  }
+  .game, .arcade, .review {
+    width: 320px;
+    height: 250px;
+  }
+  .header-inner {
+    width: 100%;
+  }
 }
-
-.header_logo {
-  height:100px;
-  margin-right: 2em;
-  vertical-align: top;
-  margin-top: 12px;
-  margin-left: 10px;
-  display: inline-block;
-
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .header-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header {
+    width: 768px;
+  }
+  .header-logo {
+    width: 50px;
+    height: 50px;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  hr{
+    width: 100%;
+    }
+  .img-working {
+    width: 768px;
+  }
+  .game, .arcade, .review {
+    width: 768px;
+    height: 250px;
+  }
+  .header-inner {
+    width: 100%;
+  }
 }
-
-.header_title {
-font-size: 3em;
-display: inline-block;
-padding-top: 5px;
-
-}
-
-.header_job {
-font-size: 1em;
-display: inline-block;
-vertical-align: bottom;
-}
-
-.img_working{
-  width: 100%;
-}
-.game,.arcade,.review{
-  width: 200px;
-  height: 200px;
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 40px;
+  }
 }

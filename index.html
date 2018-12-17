@@ -2,61 +2,69 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="Nisansala Wijesundara">
     <title>Build a Portfolio Site</title>
   </head>
   <body>
-    <div class="container">
-    <header class="header">
-          <div class="header_inner">
-            <img class="header_logo" src="img/logo.jpg" alt="logo">
-            <h1 class="header_title">
-              Nisansala Wijesundara
-            </h1>
-            <h3 class="header_job">Front-end Ninja</h3>
-            <hr>
+    <header>
+      <div class="container">
+        <div class="header-item">
+          <div class="header-content">
+            <img class="header-logo" src="img/logo.jpg" alt="logo">
           </div>
-        </header>
-  <section class="header_body">
-    <img class="img_working" src="img/working.jpg" alt="header img">
-  </section>
-<section class="featured_work">
-<h2 class="work_Title">Featured Work</h2>
-  <div class="projects">
-  <ul class="project_list">
-    <li class="project_memory_game">
-      <div class="memory">
-      <img class="game" src="img/memory_game.jpg" alt="memory game image">
-      <div class="memory_body">
-        <h3>Memory Game</h3>
-        <a href="#" class="view">View Project</a>
+          <div class="header-inner">
+            <h1>  Nisansala Wijesundara</h1>
+            <br/>
+            <h4>Front-end Ninja</h4>
+          </div>
+        </div>
       </div>
-    </div>
-  </li>
-  <li class="project_arcade_game_design">
-    <div class="arcade_game">
-    <img class="arcade" src="img/arcade-game-design.png" alt="arcade game image">
-    <div class="arcade_body">
-      <h3>Arcade Game</h3>
-      <a href="#" class="view">View Project</a>
-    </div>
-  </div>
-</li>
-<li class="restaurant_review">
-  <div class="restaurant">
-  <img class="review" src="img/restaurant_reviews.png" alt="restaurant review image">
-  <div class="review_body">
-    <h3>Restaurant Review</h3>
-    <a href="#" class="view">View Project</a>
-  </div>
-</div>
-</li>
-    </ul>
-  </div>
-  </section>
-
-</div>
+      <hr>
+    </header>
+    <section id="header-body">
+      <div class="container">
+        <img class="img-working" src="img/working.jpg" alt="header image">
+      </div>
+    </section>
+    <section id="work-body">
+      <div class="container">
+        <div class="work-Title">
+          <h3>Featured Work</h3>
+        </div>
+      </div>
+    </section>
+    <section id="featured-work">
+      <div class="container">
+        <ul class="project-list">
+          <li class="project-memory-game">
+            <img class="game" src="img/memory_game.png" alt="memory game image">
+            <p class="game-title"> Memory Game</p>
+            <div class="visit">
+              <a href="#" class="view">view </a>
+            </div>
+          </li>
+          <li class="project-arcade-game-design">
+            <img class="arcade" src="img/arcade-game-design.png" alt="arcade game image">
+            <p> Arcade Game</p>
+            <div class="visit">
+              <a href="#" class="view">view </a>
+            </div>
+          </li>
+          <li class="restaurant-review">
+            <img class="review" src="img/restaurant_reviews.jpg" alt="restaurant review image">
+            <p>Restaurant Review</p>
+            <div class="visit">
+              <a href="#" class="view">view </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <p class="bottom">Copyright &copy; 2018</p>
+    </footer>
   </body>
 </html>
