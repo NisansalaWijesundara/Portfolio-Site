@@ -86,7 +86,7 @@ a {
   flex-direction: row;
   justify-content: center;
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 412px) {
   .container {
     width: 100%;
   }
@@ -96,7 +96,7 @@ a {
     flex-direction: column;
   }
   header {
-    width: 320px;
+    width: 412px;
   }
   .header-logo {
     width: 50px;
@@ -120,11 +120,11 @@ a {
   }
   .img-working {
     height: 50%;
-    width: 320px;
+    width: 412px;
   }
   .game, .arcade, .review {
-    width: 320px;
-    height: 250px;
+    width: 412px;
+    height: 300px;
   }
   .header-inner {
     width: 100%;
